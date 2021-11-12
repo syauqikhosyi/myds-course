@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/assets/style.css"/> 
+
+    <title>PythonE</title>
+  </head>
+  <body>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!-- Loading Screen -->
+    <div class="loader hidden">
+      <img class="loading"  src="https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif" alt="">
+    </div>
+
+    <!-- Header with Navbar -->
+    <header>
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <h1>PythonE</h1>
+                      <p class="lead">In this course, you will learn Python for Data Science through Website</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#History">Python History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Capable">Python Capabilities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Compare">Python Syntax Comparison</a>
+        </li>
+      </ul>
+      <p id="date"><span></span></p>
+      <script>
+      var dt = new Date();
+      if (dt.getTimezoneOffset() == 0) (a = dt.getTime() + (7*60*60*1000))
+      else (a = dt.getTime());
+      dt.setTime(a);
+      var year = dt.getFullYear ();
+      var day = dt.getDay ();
+      var month = dt.getMonth ();
+      var date = dt.getDate ();
+      var dayArray = new Array("Sunday,","Monday,","Tuesday,","Wednesday,","Thursday,","Friday,","Saturday,");
+      var monthArray = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+      document.getElementById("date").innerHTML = dayArray[day]+ " " + monthArray[month] + " " + date + ", " +  + year + " at " + ((dt.getHours() < 10) ? "0" : "") + dt.getHours() + ":" + ((dt.getMinutes() < 10)? "0" : "") + dt.getMinutes();
+      </script>
+    </header>
+
+
+    <!-- Content -->
+    <main>
+      <br>
+      <!-- History -->
+      <div id="History">
+        <div class="card bg-light text-black">
+        <img src="https://fokusolusi.id/wp-content/uploads/2021/09/gom_elearning-python-for-beginners_teaser.jpg" alt="python history">
+        <div class="card-header">
+          Python History
+        </div>
+        <div class="card-body">
+          Python was conceived by Guido Van Rossum. What started as a hobby project, soon became a general purpose programming language: nowadays, you can use Python to build practically any piece of software. But how did this happen? Well, first of all, Python is open source. It's free to use. Second, it's very easy to build packages in Python, which is code that you can share with other people to solve specific problems. Throughout time, more and more of these packages specifically built for data science have been developed. Suppose you want to make some fancy visualizations of your company's sales. There's a package for that. Or what about connecting to a database to analyze sensor measurements? There's also a package for that. People often refer to Python as the swiss army knife of programming languages as you can do almost anything with it. In this course, we'll start to build up your data science coding skills bit by bit, so make sure to stick around to see how powerful the language can be. Currently, there are two common versions of Python, version 2-point-7 and 3-point-5 and later. Apart from some syntactical differences, they are pretty similar, but as support for version 2 will fade over time, our courses focus on Python 3. 
+        </div>
+        </div>
+      </div>
+  
+      <br>
+      <!-- Capabilities -->
+      <div id="Capable"><div class="card bg-light text-black">
+        <img src="https://www.egrovesys.com/wp-content/uploads/2019/08/python-img.png" alt="python history">
+        <div class="card-header">
+          Python Capabilities
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>Python can be used on a server to create web applications.</li>
+          </ul>
+          <ul>
+            <li>Python can be used alongside software to create workflows.</li>
+          </ul>
+          <ul>
+            <li>Python can connect to database systems. It can also read and modify files.</li>
+          </ul>
+          <ul>
+            <li>Python can be used to handle big data and perform complex mathematics.</li>
+          </ul>
+          <ul>
+            <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      
+      <br>
+      <!-- Comparison -->
+      <div id="Compare">
+      <div class="card bg-light text-black">
+        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200724145100/Python-vs-Other-Programming-Languages.png" alt="python history">
+        <div class="card-header">
+          Python Syntax Comparison
+        </div>
+        <div class="card-body">
+          There are few comparison between python syntax and other programming languages. First, Python was designed for readability, and has some similarities to the English language with influence from mathematics. Second, Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses. Last, Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
+        </div>
+        </div>
+      </div>  
+      
+      <!-- Detail of Owner -->
+      <div class="container-owner">
+        <div class="profile card">
+            <div class="profile-body">
+                <div class="profile-bio">
+                    <div class="row">
+                        <div class="col-md-5 text-center">
+                            <img class="img-thumbnail md-margin-bottom-10" src="https://media-exp1.licdn.com/dms/image/C5603AQHrGq0T1AgkzA/profile-displayphoto-shrink_400_400/0/1602428209830?e=1642032000&v=beta&t=-uaVXZOx6VAr5Zs9LLDfZqgm7CHiyP_siikZ3mnPEAM" alt="">
+                        </div>
+                        <div class="col-md-7">
+                          <br>
+                          <h2>Syauqi Khosyi</h2>
+                          <span><strong>Job:</strong> Student</span>
+                          <br>
+                          <span><strong>Institution:</strong> UPN Veteran Jakarta</span>
+                          <br>
+                          <br>
+                          <p>Hi, I'm Syauqi. I'm 19 years old. I'm currently learning in UPN Veteran Jakarta. My major is information system. I'm interested in Data Science and Data Analyst field. Recently, i learn about Bootstrap & JavaScript for build a website.</p>  
+                        </div>
+                    </div>    
+                </div>
+          </div>
+        </div>
+      </div>                  
+    </main>
+
+    <br>
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #95AFBA;">
+        © 2021 Copyright: Syauqi Khosyi
+      </div>
+    </footer>
+
+  </body>
+</html>
